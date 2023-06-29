@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/registro.css" />
+    <script src="script.js"></script>
+    <title>Registro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/img/logo principal.png" />
+      </div>
+      <div class="registro">
+        <h2>Registro</h2> 
+        <form method="POST" action="{% url 'registro_usuario' %}" id="registro">
+          <div class="input-wrapper">
+            <input type="text" placeholder="nombre" id="nombre" required />
+            <span id="emailError" class="error-message"></span>
+        </div> 
+            <div class="input-wrapper">
+                <input type="email" placeholder="email" id="email" required />
+                <span id="emailError" class="error-message"></span>
+            </div>    
+          <div class="input-wrapper">
+            <input type="text" placeholder="usuario" id="usuario" required />
+            <span id="usernameError" class="error-message"></span>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" placeholder="contraseña" id="contraseña" required />
+            <span id="passwordError" class="error-message"></span>
+          </div>
+          <button type="submit" id="registroButton" value="registrese">
+            <a href="inicio.html">registrese</a>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/registro.js"></script>
+  </body>
+</html>

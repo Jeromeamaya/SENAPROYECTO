@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Squada One', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 44, 255);
+    background: linear-gradient(222deg, rgb(20, 30, 80) 0%, rgb(75, 61, 158) 47%, rgb(121, 33, 81) 100%);
+    background-size: 300% 300% ;
+    animation: color 12s ease-in-out infinite;
+    color: #ffffff;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+    
+    100%{
+        background-position: 0 50%;
+    }
+    
+}   
+
+.logo h1 {
+    font-size: 48px;
+}
+img {
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
+
+.login {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 17%, rgba(252, 252, 252, 1) 55%, rgba(249, 249, 249, 1) 100%);
+    color: #ea6091;
+    text-align: center;
+}
+
+.login h2 {
+    font-size: 70px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border: 1px solid #0e293c;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0e293c;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 auto;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.recover{
+    color: #ea6091;
+}
+.small-text {
+    font-size: 14px;
+    margin-top: 20px;
+}
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+}

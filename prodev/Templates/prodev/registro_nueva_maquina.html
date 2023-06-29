@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cccc8003a8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <title>Nueva Maquina</title>
+    <body>
+        <div class="Contenido">
+            <h1 class="logo "><img src="assets/img/logo principal.png"  width="40px" >  <u> Prodev </u></h1>
+                <div class="Contenido-Agrupado">
+                    <h1 class="img"><img src="assets/img/Imagen2.png" width="15%" > <u>Nueva Maquina</u> </h1>
+                        <div class="formulario-Contenido">
+                            <form id="conexion" validate> 
+                                <p>
+                                    <label form="maquina"> Nombre Maquina</label>
+                                    <input type="text" id="maquina" name="Nombre Maquina" required >
+                                    <small>Por favor ingrese en Nombre de la Maquina</small> 
+                                </p>
+                                <p>
+                                    <label form="marca"> Marca</label>
+                                    <input type="text" id="marca" name="Marca" required>
+                                    <small>Ingrese la Marca de la Maquina</small>
+                                </p>
+                                <p>
+                                    <label form="serial"> serial</label>
+                                    <input type="text" id="serial" name="Serial" required> 
+                                    <small>Ingrese el Serial De la Maquina</small>
+                                </p>
+                                <p>
+                                    <label form="tipo_maq"> Tipo Maquina</label>
+                                    <input type="text" id="tipo_maq" name="Tipo Maquina" required>
+                                    <small>Ingrese Tipo de Maquina</small>
+                                </p>
+                                <p>
+                                    <label form="tipo_man"> Tipo mantenimiento</label>
+                                    <input type="text" id="tipo_man" name="Tipo mantenimiento" required> 
+                                    <small>Ingrese el Tipo de Mantenimiento</small>
+                                </p>
+                                <p>
+                                    <label form="fecha"> Fecha ingreso</label>
+                                    <input type="date" id="fecha" name="Fecha ingreso" required>
+                                    <small>Ingrese la Fecha de ingreso</small>
+                                </p>
+                                <p>
+                                    <label form="email"> email</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <small>Ingrese el Email</small>
+                                </p>
+                                <p>
+                                    <label form="Estado"> Estado</label>
+                                        <select name="Estado" id="Estado" required>
+                                            <option value="Ingresado">Ingresado</option>
+                                            <option value="En Mantenimiento">En Mantenimiento</option>
+                                            <option value="Reparado">Reparado</option>
+                                        </select>
+                                </p>
+                                <p class="block">
+                                    <label > Descripción</label>
+                                    <textarea name="Descripción" rows="2" required> </textarea>
+                                </p>
+                                <p>
+                                    <button type="submit" style="cursor:pointer" required>
+                                        <a href="./historialMaquina.html">Agregar</a>   
+                                    </button>
+                                </p>
+                                <p>
+                                    <button type="text" onclick="Volver" style="cursor:pointer">
+                                       <a href="./inicio.html"> Volver </a>    
+                                    </button>
+                                </p>                  
+                            </form>
+                    </div>
+            </div>
+        </div>                     
+        <script src="nuevaMaquina.js"></script>
+        
+    </body>
+     </html>
+    
