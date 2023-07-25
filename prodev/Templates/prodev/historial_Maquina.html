@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/cccc8003a8.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/prueba.css" />
+    <title>Formulario de Historial de Máquina</title>
+</head>
+    <body>
+        <div class="Contenido">
+            <h1 class="logo "><img src="./assets/img/logo principal.png"  width="40px" >  <u> Prodev </u></h1>
+                <div class="Contenido-Agrupado">
+                    <h1 class="img"><img src="./assets/img/Imagen2.png" width="15%" > <u>Historial de Maquina</u> </h1>
+                        <div class="formulario-Contenido">
+                            <form id="guardar_historial.py" validate>
+                                <!-- Aquí van los campos del formulario, igual que antes -->
+                                <h2>Máquinas en Mantenimiento</h2>
+                                
+                                <h2>ID Máquina: M001</h2>
+                                <p>Nombre Máquina: Máquina 1</p>
+                                <p>Marca: Marca A</p>
+                                <p>Modelo: Modelo X</p>
+                                <p>Número de Serie: ABC123</p>
+                                <p>Fecha de Ingreso: 2023-07-15</p>
+                                <p class="block">
+                                    <label> Descripción</label>
+                                    <textarea name="Descripción" rows="2" required> </textarea>
+                                </p>
+                                <p>
+                                    <label form="Estado"> Estado</label>
+                                    <select name="Estado" id="Estado" required>
+                                        <option value="En_reparacion">En reparacion</option>
+                                        <option value="Reparada">Reparada</option>
+                                        <option value="pendiente_de_repacion"> Pendiente de reparacion    </option>
+                                        <option value="fuera_de_servicio">Fuera de servicio</option>
+                                    </select>
+                                    
+                                </p>
+                                <input type="submit" value="Guardar" />
+
+                                
+                                <h2>Máquinas en Mantenimiento</h2>
+                                <h2>ID Máquina: M002</h2>
+                                <p>Nombre Máquina: Máquina 2</p>
+                                <p>Marca: Marca B</p>
+                                <p>Modelo: Modelo Y</p>
+                                <p>Número de Serie: XYZ789</p>
+                                <p>Fecha de Ingreso: 2023-07-18</p>
+                                <p class="block">
+                                    <label> Descripción</label>
+                                    <textarea   textarea name="Descripción" rows="2" required> </textarea>
+                                </p>
+                                <p>
+                                    <label form="Estado"> Estado</label>
+                                    <select name="Estado" id="Estado" required>
+                                        <option value="En_reparacion">En reparacion</option>
+                                        <option value="Reparada">Reparada</option>
+                                        <option value="pendiente_de_repacion">Pendiente de reparacion</option>
+                                        <option value="fuera_de_servicio">Fuera de servicio</option>
+                                    </select>   
+                                </p>
+                                <input type="submit" value="Guardar" />
+                            </form>
+                    </div>
+                </div>
+                <!-- Aquí se pueden agregar más máquinas en mantenimiento si es necesario -->
+        </div>
+    </body>
+</html>

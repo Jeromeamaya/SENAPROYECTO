@@ -19,7 +19,7 @@
       </div>
       <div class="registro">
         <h2>Registro</h2> 
-        <form method="POST" action="{% url 'registro_usuario' %}" id="registro">
+        <form method="POST" action={% url 'registro_usuario' %} id="registro">
           <div class="input-wrapper">
             <input type="text" placeholder="nombre" id="nombre" required />
             <span id="emailError" class="error-message"></span>
